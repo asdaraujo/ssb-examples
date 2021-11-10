@@ -106,7 +106,6 @@ In SSB, create an *Apache Kafka* table with the following properties:
 |
 [source,javascript]
 ----
-var XMLTokener = Java.type("org.json.XMLTokener");
 var XML = Java.type("org.json.XML");
 var doc = XML.toJSONObject(record.value);
 doc.get('book').toString();
