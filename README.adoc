@@ -136,7 +136,7 @@ WITH (
   'properties.auto.offset.reset' = 'earliest',
   'properties.request.timeout.ms' = '120000',
   'properties.transaction.timeout.ms' = '900000',
-  'scan.transform.js.code' = 'var XMLTokener = Java.type("org.json.XMLTokener"); var XML = Java.type("org.json.XML"); var doc = XML.toJSONObject(record.value); doc.get(''book'').toString();',
+  'scan.transform.js.code' = 'var XML = Java.type("org.json.XML"); var doc = XML.toJSONObject(record.value); doc.get(''book'').toString();',
   'scan.startup.mode' = 'earliest-offset'
 )
 ----
